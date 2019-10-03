@@ -13,8 +13,7 @@ header {
       width: 50px;
       border: 1px solid white;
     >.checkbox {
-      display: flex;
-      align-self: center;
+      display: block;
       padding: 5px 5px;
       justify-content: flex-end;
       
@@ -37,20 +36,21 @@ header {
 }
 
 
-. {
-  .nav-menu {
-    position: absolute;
+ 
+  .nav-menu { 
     width: 100%;
     padding: 0;
     margin: 0;
     cursor: pointer;
-    left: 0;
-    top: 40px;
     background-color: black;
     border: 1px solid white;
-    
+        
 
     li {
+      padding-left: 10px;
+      .palabraHome{
+        color:$color-font;
+      }
       a {
         background-color: black;
         display: block;
@@ -60,11 +60,21 @@ header {
       }
     }
   }
-}
-
-nav.bar{
-  .checkbok{
-    display:none;
+.nav-menu{
+  .formulario{
+    padding-left: 10px;
+    display: flex;
+    .search{
+      padding-left: 10px;
+      display: flex;
+    }
   }
-
 }
+
+.nav-menu{
+  max-height: 0;
+  overflow: hidden;
+}
+.checkbox:checked ~.nav-menu{
+    height:200px;
+  }
