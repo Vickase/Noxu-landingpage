@@ -1,0 +1,70 @@
+header {
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
+  .area-noxu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+    .boton{
+      height: 50px;
+      width: 50px;
+      border: 1px solid white;
+    >.checkbox {
+      display: flex;
+      align-self: center;
+      padding: 5px 5px;
+      justify-content: flex-end;
+      
+      }
+      .hamburguesa{
+        display: flex;
+        align-self: center;
+        font-size: 40px;
+        text-align: center;
+      }
+    }
+  }
+  .titulo-nav {
+    font-weight: $font-weight-black;
+    font-size: 2em;
+    display: flex;
+    align-content: flex-start;
+    padding: 5px 5px;  
+  }
+}
+
+
+. {
+  .nav-menu {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    left: 0;
+    top: 40px;
+    background-color: black;
+    border: 1px solid white;
+    
+
+    li {
+      a {
+        background-color: black;
+        display: block;
+        padding: 10px 0px;
+        border-right: 1px solid #f4f4f4;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+nav.bar{
+  .checkbok{
+    display:none;
+  }
+
+}
