@@ -3,35 +3,52 @@ header {
   padding: 0;
   border: 1px solid white;
 }
-header .area-noxu {
+
+.titulo-nav {
+  font-weight: 900;
+  font-size: 2em;
+  display: flex;
+  align-content: flex-start;
+  padding: 5px 5px;
+}
+
+.area-noxu {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
   align-content: space-between;
 }
-header .area-noxu .boton {
+.area-noxu .contenedor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.area-noxu .contenedor .boton {
   height: 50px;
   width: 50px;
   border: 1px solid white;
-}
-header .area-noxu .boton > .checkbox {
   display: block;
+}
+.area-noxu .contenedor .boton #checkbox {
+  display: flex;
   padding: 5px 5px;
   justify-content: flex-end;
 }
-header .area-noxu .boton .hamburguesa {
+.area-noxu .contenedor .boton .hamburguesa {
   display: flex;
-  align-self: center;
+  align-self: flex-end;
   font-size: 40px;
-  text-align: center;
+  justify-content: flex-end;
 }
-header .titulo-nav {
-  font-weight: 900;
-  font-size: 2em;
+
+.contenedor .nav-menu .formulario {
+  padding-left: 10px;
   display: flex;
-  align-content: flex-start;
-  padding: 5px 5px;
+}
+.contenedor .nav-menu .formulario .search {
+  padding-left: 10px;
+  display: flex;
 }
 
 .nav-menu {
@@ -56,22 +73,25 @@ header .titulo-nav {
   text-decoration: none;
 }
 
-.nav-menu .formulario {
-  padding-left: 10px;
+.div-form {
   display: flex;
 }
-.nav-menu .formulario .search {
-  padding-left: 10px;
+.div-form .formulario {
   display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  position: absolute;
+  top: 450px;
 }
 
 .nav-menu {
   max-height: 0;
-  overflow: hidden;
+  position: absolute;
 }
 
-.checkbox:checked ~ .nav-menu {
-  height: 200px;
+#check-box:checked ~ .nav-menu {
+  max-height: 200px;
+  transition: max-height 1s ease-in;
 }
 
 body {
