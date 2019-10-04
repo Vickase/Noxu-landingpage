@@ -78,12 +78,13 @@ header .contenedor nav > div .div-form .formulario {
 }
 header .contenedor nav > div .div-form .formulario .search {
   height: 38px;
-  width: 35%;
+  width: 55%;
   border-radius: 5px;
   border: none;
   color: #495057;
   margin-right: 5px;
-  outline: none;
+  padding-left: 5px;
+  box-sizing: border-box;
 }
 header .contenedor nav > div .div-form .formulario .search-button {
   background-color: transparent;
@@ -111,13 +112,40 @@ header .contenedor nav > div .div-form .formulario .search-button {
 .hero .hero-title {
   display: flex;
   font-weight: 900;
-  margin-top: 0;
+  margin-top: 5px;
 }
 .hero .sub-title {
   display: flex;
   font-weight: 400;
   font-style: italic;
   margin-top: 0;
+}
+
+.seccion-featured {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px;
+  justify-content: center;
+}
+.seccion-featured .header-sections {
+  display: flex;
+}
+.seccion-featured .header-sections .view-all {
+  position: relative;
+  border: 1px solid white;
+  width: 150px;
+  border-radius: 5px;
+  height: 100px;
+  position: relative;
+  margin: 15px;
+  align-content: center;
+}
+.seccion-featured .header-sections .view-all .texto-view {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 body {
