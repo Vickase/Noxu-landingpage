@@ -1,7 +1,6 @@
 header {
   margin: 0;
   padding: 0;
-  border: 1px solid white;
   width: 100%;
   display: flex;
 }
@@ -18,7 +17,7 @@ header .area-noxu .titulo-nav {
   font-size: 2em;
   display: flex;
   align-content: flex-start;
-  padding: 5px 5px;
+  padding: 5px 15px;
 }
 header .contenedor {
   display: flex;
@@ -29,7 +28,6 @@ header .contenedor {
 header .contenedor .btn {
   height: 50px;
   width: 50px;
-  border: 1px solid white;
   display: flex;
   font-size: 40px;
 }
@@ -37,15 +35,20 @@ header .contenedor .checkbox {
   display: flex;
   padding: 5px 5px;
   justify-content: center;
+  display: none;
 }
 header .contenedor nav > div {
+  /* clase contenedor-div */
   position: absolute;
   left: 0;
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
   width: 100%;
   background-color: black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.75s ease;
+  z-index: 9;
 }
 header .contenedor nav > div ul {
   width: 100%;
@@ -66,6 +69,55 @@ header .contenedor nav > div ul li a {
 }
 header .contenedor nav > div .div-form {
   display: flex;
+}
+header .contenedor nav > div .div-form .formulario {
+  padding-left: 10px;
+  width: 100%;
+  font-size: 1em;
+  margin: 8px 0px;
+}
+header .contenedor nav > div .div-form .formulario .search {
+  height: 38px;
+  width: 35%;
+  border-radius: 5px;
+  border: none;
+  color: #495057;
+  margin-right: 5px;
+  outline: none;
+}
+header .contenedor nav > div .div-form .formulario .search-button {
+  background-color: transparent;
+  color: #008CBA;
+  border: 1px solid #008CBA;
+  border-radius: 5px;
+  height: 38px;
+}
+
+.checkbox:checked + nav > .contenedor-menu {
+  max-height: 450px;
+  transition: max-height 0.75s ease;
+}
+
+.hero {
+  background: url("../imagenes/hero-background.jpg") no-repeat center;
+  display: flex;
+  background-size: cover;
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.hero .hero-title {
+  display: flex;
+  font-weight: 900;
+  margin-top: 0;
+}
+.hero .sub-title {
+  display: flex;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 0;
 }
 
 body {

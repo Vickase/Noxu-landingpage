@@ -1,0 +1,23 @@
+.hero {
+  background: url("../imagenes/hero-background.jpg") no-repeat center;
+  display: flex;
+  background-size: cover;
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  .hero-title {
+    display: flex;
+    font-weight: $font-weight-black;
+    margin-top: 0;
+  }
+  .sub-title {
+    display: flex;
+    font-weight: 400;
+    font-style: italic;
+    margin-top:0;
+
+  }
+
+}
