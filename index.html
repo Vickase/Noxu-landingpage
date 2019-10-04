@@ -27,8 +27,8 @@
       </section>
 
       <div class="contenedor">
-        <label for="check-box" class=" boton">
-          <i class="fa fa-bars button hamburguesa" aria-hidden="true"></i>
+        <label for="check-box" class="btn">
+          <i class="fa fa-bars  hamburguesa" aria-hidden="true"></i>
         </label>
         <input
           type="checkbox"
@@ -38,33 +38,35 @@
         />
 
         <nav>
-          <ul class="nav-menu">
-            <li><a class="palabraHome" href="#">Home</a></li>
-            <li><a href="#">Woman</a></li>
-            <li><a href="#">Man</a></li>
-            <li><a href="#">Unisex</a></li>
-            <li class="dropdown">
-              <a href="#">Accesories</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Watches</a></li>
-                <li><a href="#">Chains</a></li>
-                <li><a href="#">Earrings</a></li>
-                <li><a href="#">Hats</a></li>
-              </ul>
-            </li>
-          </ul>
+          <div>
+            <ul>
+              <li><a class="palabraHome" href="#">Home</a></li>
+              <li><a href="#">Woman</a></li>
+              <li><a href="#">Man</a></li>
+              <li><a href="#">Unisex</a></li>
+              <li class="dropdown">
+                <a href="#">Accesories</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Watches</a></li>
+                  <li><a href="#">Chains</a></li>
+                  <li><a href="#">Earrings</a></li>
+                  <li><a href="#">Hats</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="div-form">
+              <form class="formulario">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  name="search"
+                  class="search"
+                />
+                <button type="submit">Search</button>
+              </form>
+            </div>
+          </div>
         </nav>
-        <div class="div-form">
-          <form class="formulario">
-            <input
-              type="text"
-              placeholder="Search"
-              name="search"
-              class="search"
-            />
-            <button type="submit">Search</button>
-          </form>
-        </div>
       </div>
     </header>
 

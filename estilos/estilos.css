@@ -2,96 +2,70 @@ header {
   margin: 0;
   padding: 0;
   border: 1px solid white;
+  width: 100%;
+  display: flex;
 }
-
-.titulo-nav {
+header .area-noxu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-content: space-between;
+  flex: 1;
+}
+header .area-noxu .titulo-nav {
   font-weight: 900;
   font-size: 2em;
   display: flex;
   align-content: flex-start;
   padding: 5px 5px;
 }
-
-.area-noxu {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-  align-content: space-between;
-}
-.area-noxu .contenedor {
-  width: 100%;
+header .contenedor {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-right: 10px;
 }
-.area-noxu .contenedor .boton {
+header .contenedor .btn {
   height: 50px;
   width: 50px;
   border: 1px solid white;
-  display: block;
+  display: flex;
+  font-size: 40px;
 }
-.area-noxu .contenedor .boton #checkbox {
+header .contenedor .checkbox {
   display: flex;
   padding: 5px 5px;
-  justify-content: flex-end;
+  justify-content: center;
 }
-.area-noxu .contenedor .boton .hamburguesa {
+header .contenedor nav > div {
+  position: absolute;
+  left: 0;
   display: flex;
-  align-self: flex-end;
-  font-size: 40px;
-  justify-content: flex-end;
+  flex-direction: column;
+  border: 1px solid white;
+  width: 100%;
+  background-color: black;
 }
-
-.contenedor .nav-menu .formulario {
-  padding-left: 10px;
-  display: flex;
-}
-.contenedor .nav-menu .formulario .search {
-  padding-left: 10px;
-  display: flex;
-}
-
-.nav-menu {
+header .contenedor nav > div ul {
   width: 100%;
   padding: 0;
   margin: 0;
-  cursor: pointer;
-  background-color: black;
-  border: 1px solid white;
 }
-.nav-menu li {
+header .contenedor nav > div ul li {
   padding-left: 10px;
 }
-.nav-menu li .palabraHome {
+header .contenedor nav > div ul li .palabraHome {
   color: white;
 }
-.nav-menu li a {
+header .contenedor nav > div ul li a {
   background-color: black;
   display: block;
   padding: 10px 0px;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
-
-.div-form {
+header .contenedor nav > div .div-form {
   display: flex;
-}
-.div-form .formulario {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  position: absolute;
-  top: 450px;
-}
-
-.nav-menu {
-  max-height: 0;
-  position: absolute;
-}
-
-#check-box:checked ~ .nav-menu {
-  max-height: 200px;
-  transition: max-height 1s ease-in;
 }
 
 body {

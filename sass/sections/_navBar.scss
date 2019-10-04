@@ -2,96 +2,74 @@ header {
   margin: 0;
   padding: 0;
   border: 1px solid white;
-}
-.titulo-nav {
-  font-weight: $font-weight-black;
-  font-size: 2em;
-  display: flex;
-  align-content: flex-start;
-  padding: 5px 5px;
-}
-.area-noxu {
-  display: flex;
-  flex-direction: row;
   width: 100%;
-  justify-content: space-between;
-  align-content: space-between;
-  .contenedor {
+  display: flex;
+  .area-noxu {
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+    flex: 1;
+    .titulo-nav {
+      font-weight: $font-weight-black;
+      font-size: 2em;
+      display: flex;
+      align-content: flex-start;
+      padding: 5px 5px;
+    }
+  }
+  .contenedor {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
 
-    .boton {
+    .btn {
       height: 50px;
       width: 50px;
       border: 1px solid white;
-      display: block;
-      #checkbox {
-        display: flex;
-        padding: 5px 5px;
-        justify-content: flex-end;
-      }
-      .hamburguesa {
-        display: flex;
-        align-self: flex-end;
-        font-size: 40px;
-        justify-content: flex-end;
-      }
-    }
-  }
-}
-.contenedor .nav-menu {
-  .formulario {
-    padding-left: 10px;
-    display: flex;
-
-    .search {
-      padding-left: 10px;
       display: flex;
+      font-size: 40px;
+    }
+    .checkbox {
+      display: flex;
+      padding: 5px 5px;
+      justify-content: center;
+    }
+    nav {
+      >div {
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        width: 100%;
+        background-color: black;
+
+        ul {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+
+          li {
+            padding-left: 10px;
+            .palabraHome {
+              color: $color-font;
+            }
+            a {
+              background-color: black;
+              display: block;
+              padding: 10px 0px;
+              text-decoration: none;
+            }
+          }
+        }
+        .div-form {
+          display: flex;
+          
+        }
+      }
     }
   }
-}
-
-.nav-menu {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  background-color: black;
-  border: 1px solid white;
-
-  li {
-    padding-left: 10px;
-    .palabraHome {
-      color: $color-font;
-    }
-    a {
-      background-color: black;
-      display: block;
-      padding: 10px 0px;
-      border-right: 1px solid #f4f4f4;
-      text-decoration: none;
-    }
-  }
-}
-.div-form {
-  display: flex;
-  .formulario {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-    position: absolute;
-    top:450px;
-    
-    }
-  }
-
-
-.nav-menu {
-  max-height: 0;
-  position: absolute;
-}
-#check-box:checked ~ .nav-menu {
-  max-height: 200px;
-  transition: max-height 1s ease-in;
 }
