@@ -1,26 +1,14 @@
-.seccion{
+.seccion-featured {
   display: flex;
   flex-direction: column;
   padding: 0px 50px;
-  justify-content: center;
-  .header-sections{
-      width:100%;
-    .view-all {
-      border: 1px solid white;
-      width: 150px;
-      border-radius: 5px;
-      height: 100px;
-      position: relative;
-      margin: 15px;
-      align-content: center;
-
-      .texto-view {
-        text-align: center;
-        box-sizing: border-box;
-        padding: 5px;
-        font-size: 30px;
-        font-weight: 700;
+  width: 100%;
+  .col-contenedor{
+      box-sizing: border-box;
+      display: flex;
+      
+      .view-all{
+          border: 1px solid white;
       }
-    }
   }
 }
