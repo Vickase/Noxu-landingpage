@@ -44,6 +44,7 @@
     padding: 3px 10px;
     justify-content: center !important;
     padding: 0px 20px;
+    
     .card {
       width: 100%;
       position: relative;
@@ -51,14 +52,28 @@
       flex-direction: column;
       box-sizing: border-box;
       background-color: white;
-      margin-bottom: 20px;
+      margin-bottom: 26px;
+      border-radius: 3px;
       .photo-card {
         width: 100%;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
       }
       .product-info {
         color: #212529;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        .product-name{
+          font-size:20px;
+          width:50%;
+          .precio{
+            
+          }
+        }
       }
     }
+    
   }
 }
 
