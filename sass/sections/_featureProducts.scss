@@ -1,14 +1,68 @@
 .seccion-featured {
   display: flex;
   flex-direction: column;
-  padding: 0px 50px;
-  width: 100%;
-  .col-contenedor{
-      box-sizing: border-box;
-      display: flex;
-      
-      .view-all{
-          border: 1px solid white;
+  padding: 0px 40px;
+  // width: 100%;
+  .col-contenedor {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .view-all {
+      border: 1px solid white;
+      width: 150px;
+      border-radius: 5px;
+      height: 100px;
+      position: relative;
+      margin: 15px;
+      align-content: center;
+      flex-wrap: flex;
+
+      .texto-view {
+        text-align: center;
+        box-sizing: border-box;
+        padding: 5px;
+        font-size: 30px;
+        font-weight: 700;
       }
+    }
+    .featured-title {
+      display: flex;
+      font-size: 35px;
+      padding: 0px 15px;
+      text-align: center;
+      box-sizing: border-box;
+      align-content: center;
+    }
   }
+
+  .card-container {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 10px;
+    justify-content: center !important;
+    padding: 0px 20px;
+    .card {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      background-color: white;
+      margin-bottom: 20px;
+      .photo-card {
+        width: 100%;
+      }
+      .product-info {
+        color: #212529;
+      }
+    }
+  }
+}
+
+.view-all:active {
+  background-color: white;
+  color: #212529;
 }
