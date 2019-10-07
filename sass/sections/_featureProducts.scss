@@ -44,7 +44,7 @@
     padding: 3px 10px;
     justify-content: center !important;
     padding: 0px 20px;
-    
+
     .card {
       width: 100%;
       position: relative;
@@ -64,16 +64,28 @@
         height: 120px;
         display: flex;
         flex-direction: row;
-        .product-name{
-          font-size:20px;
-          width:50%;
-          .precio{
-            
-          }
+        justify-content: space-between;
+        width: 100%;
+
+        .product-name {
+          font-size: 20px;
+          width: 100%;
+          padding: 2px 14px;
+          margin-bottom: 0;
+        }
+        .precio {
+          font-size: 20px;
+          width: 50%;
+          padding: 2px 14px;
+        }
+        .iconos {
+          display: flex;
+          position: absolute;
+          bottom: 13px;
+          padding: 2px 14px;
         }
       }
     }
-    
   }
 }
 

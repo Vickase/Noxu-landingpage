@@ -184,14 +184,50 @@
   height: 120px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 .seccion-featured .card-container .card .product-info .product-name {
   font-size: 20px;
-  width: 50%;
+  width: 100%;
+  padding: 2px 14px;
+  margin-bottom: 0;
 }
+.seccion-featured .card-container .card .product-info .precio {
+  font-size: 20px;
+  width: 50%;
+  padding: 2px 14px;
+}
+.seccion-featured .card-container .card .product-info .iconos {
+  display: flex;
+  position: absolute;
+  bottom: 13px;
+  padding: 2px 14px;
+}
+
 .view-all:active {
   background-color: white;
   color: #212529;
+}
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+}
+.seccion .card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 10px;
+  justify-content: center !important;
+  padding: 0px 20px;
+}
+.seccion .card-container .photo-container {
+  display: flex;
+  width: 100%;
+}
+.seccion .card-container .photo-container .photo-items {
+  width: 100%;
 }
 
 body {
