@@ -45,6 +45,7 @@
         .photo-items {
           margin-bottom: 25px;
           max-width: 100%;
+          border-radius: 5px;
 
           &#shoes {
             min-height: 200px;
@@ -53,7 +54,7 @@
           }
           &#jeans {
             min-height: 200px;
-            height: 258px;
+            height: 240px;
             width: 100%;
           }
           &#shirts {

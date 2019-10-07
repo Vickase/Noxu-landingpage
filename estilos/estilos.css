@@ -260,6 +260,7 @@
 .seccion .card-container .photo-container .imagen-texto .photo-items {
   margin-bottom: 25px;
   max-width: 100%;
+  border-radius: 5px;
 }
 .seccion .card-container .photo-container .imagen-texto .photo-items#shoes {
   min-height: 200px;
@@ -268,7 +269,7 @@
 }
 .seccion .card-container .photo-container .imagen-texto .photo-items#jeans {
   min-height: 200px;
-  height: 258px;
+  height: 240px;
   width: 100%;
 }
 .seccion .card-container .photo-container .imagen-texto .photo-items#shirts {
@@ -276,6 +277,43 @@
 }
 .seccion .card-container .photo-container .imagen-texto .photo-items#outfits {
   max-height: 550px;
+}
+
+.pie-pagina {
+  width: 100%;
+  background-color: #323232;
+}
+.pie-pagina .col-contenedor {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pie-pagina .col-contenedor .titulo-items {
+  display: flex;
+  font-size: 35px;
+  padding: 0px 15px;
+  text-align: center;
+  box-sizing: border-box;
+  align-content: center;
+}
+.pie-pagina .col-contenedor .contacto-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pie-pagina .col-contenedor .contacto-address .subtitulo {
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.pie-pagina .col-contenedor .contacto-address .separador {
+  font-weight: 700;
+  margin: 4px 0px;
+  font-size: 20px;
+}
+.pie-pagina .col-contenedor .contacto-address .texto {
+  margin: 0;
 }
 
 body {
