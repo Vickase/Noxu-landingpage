@@ -36,9 +36,14 @@
       justify-content: center;
       display: none;
     }
+    .checkbox2{
+      display: flex;
+      position: relative;
+      display: none;
+    }
     nav {
       > div {
-        /* clase contenedor-div */
+        /* clase contenedor-menu */
         position: absolute;
         left: 0;
         display: flex;
@@ -61,12 +66,26 @@
               color: $color-font;
             }
             a {
-              background-color: $back-color;
               display: block;
               padding: 10px 0px;
               text-decoration: none;
               font-size: 20px;
               color: rgba(255, 255, 255, 0.75);
+            }
+          }
+          .dropdown {
+            padding-right: 25px;
+
+            .dropdown-menu {
+              background-color: white;
+              border-radius: 5px;
+              overflow: hidden;
+              max-height: 0;
+              transition: max-height 0.75s ease;
+
+              a {
+                color: black;
+              }
             }
           }
         }
@@ -80,7 +99,7 @@
 
             .search {
               height: 38px;
-              width: 70%;
+              width: 74%;
               border-radius: 5px;
               border: none;
               color: #495057;
@@ -104,5 +123,8 @@
 
 .checkbox:checked + nav > .contenedor-menu {
   max-height: 450px;
-  transition: max-height 0.75s ease;
+} 
+#downarrow:checked + .dropdown-menu {
+  max-height: 220px;
+
 }

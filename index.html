@@ -30,12 +30,7 @@
         <label for="check-box" class="btn">
           <i class="fa fa-bars  hamburguesa" aria-hidden="true"></i>
         </label>
-        <input
-          type="checkbox"
-          name="checkbox"
-          class="checkbox"
-          id="check-box"
-        />
+        <input type="checkbox" name="checkbox" class="checkbox" id="check-box"/>
 
         <nav>
           <div class="contenedor-menu">
@@ -45,16 +40,16 @@
               <li><a href="#">Man</a></li>
               <li><a href="#">Unisex</a></li>
               <li class="dropdown">
-                <a href="#"
-                  >Accesories
-                  <i class="fa fa-caret-down flecha" aria-hidden="true"></i
-                ></a>
-
+                <label for="downarrow">
+                <a>Accesories
+                  <i class="fa fa-caret-down flecha" aria-hidden="true"></i></a>
+                </label>
+                <input type="checkbox" name="downarrow" class="checkbox2" id="downarrow"/>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Watches</a></li>
-                  <li><a href="#">Chains</a></li>
-                  <li><a href="#">Earrings</a></li>
-                  <li><a href="#">Hats</a></li>
+                  <li><a>Watches</a></li>
+                  <li><a>Chains</a></li>
+                  <li><a>Earrings</a></li>
+                  <li><a>Hats</a></li>
                 </ul>
               </li>
             </ul>
@@ -86,7 +81,7 @@
 
       <section class="seccion-featured" id="feature">
         <header class="col-contenedor">
-          <div class="recuadro">
+          <div class="recuadro"> <!-- Acá en realidad es un button, no un div. tener en cuenta para el tp -->
             <p class="texto-view">View All</p>
           </div>
           <h2 class="featured-title">Featured Products</h2>
@@ -265,9 +260,15 @@
         </p>
         <p class="parrafo2">View More Of My<a href="#"> Projects </a></p>
         <div class="iconos-web">
-          <a href="https://www.freecodecamp.org/forum/u/erickkg/summary"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
-          <a href="https://codepen.io/login"><i class="fa fa-codepen" aria-hidden="true"></i></a>
-          <a href="https://www.instagram.com/webdev_erickkg/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.freecodecamp.org/forum/u/erickkg/summary"
+            ><i class="fa fa-free-code-camp" aria-hidden="true"></i
+          ></a>
+          <a href="https://codepen.io/login"
+            ><i class="fa fa-codepen" aria-hidden="true"></i
+          ></a>
+          <a href="https://www.instagram.com/webdev_erickkg/?hl=en"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
         </div>
       </section>
     </footer>
